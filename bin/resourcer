@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+require __DIR__. '/../vendor/autoload.php';
+
+use nazmulpcc\Resourcer;
+use Symfony\Component\Console\Application;
+
+$app = new Application();
+$command = new Resourcer();
+$app->add($command);
+// $app->setDefaultCommand($command->getName());
+$app->run();

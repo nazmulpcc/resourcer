@@ -1,0 +1,21 @@
+{
+    "name": "nazmulpcc/resourcer",
+    "description": "PHP Library to execute a command under limited time and memory.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nazmul Alam",
+            "email": "nazmulpcc@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "nazmulpcc\\" : "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "^4.2"
+    }
+}
