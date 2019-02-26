@@ -172,6 +172,7 @@ class Resourcer extends Command
     {
         $this->time = $this->input->getOption('time');
         $this->memory = $this->getMemory();
+        $this->meta = $this->input->getOption('meta');
         $this->elapsed = 0;
         $this->process = proc_open($this->options['cmd'], $this->getDescriptor(), $pipes, $this->options['cwd']);
         $this->firstTimeUpdate();
